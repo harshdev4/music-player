@@ -58,7 +58,8 @@ body {
 }
 
 .controls{
-    width: 30%;
+    width: 25%;
+    min-width: 210px;
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -87,6 +88,6 @@ body {
 
 @media (max-width:599px) {
     .musicListContainer {
-        width: 80%;
+        width: 86%;
     }
 }
