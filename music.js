@@ -35,15 +35,15 @@ controlBtn.addEventListener("click", function () {
 });
 
 controlBackBtn.addEventListener("click", function () {
-    if (index-1 >= 0 && currentAudio) {
-        index = currentAudio[0] - 2;
-        if (currentAudio) {
-            playBtn[index].click();
-        }
+    if(!currentAudio){
+        currentAudio = playBtn[0].getAttribute("id");
     }
 
-    else if(!currentAudio || currentAudio[0] !== "1") {
-        playBtn[0].click();
+    if (Number(index) >= 0) {
+        index = currentAudio[0] - 2;
+        if (currentAudio && Number(index) >= 0) {
+            playBtn[index].click();
+        }
     }
 })
 
@@ -52,9 +52,9 @@ controlNextBtn.addEventListener("click", function () {
         currentAudio = playBtn[0].getAttribute("id");
     }
 
-    if (Number(index)+1 <= playBtn.length) {
+    if (Number(index) <= playBtn.length-1) {
         index = currentAudio[0];
-        if (currentAudio) {
+        if (currentAudio && Number(index) <= playBtn.length-1) {
             playBtn[index].click();
         }
     }
