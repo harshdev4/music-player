@@ -24,7 +24,7 @@ body {
 
 .music {
     border-radius: 8px;
-    background-color: rgb(137, 231, 99);
+    background-color: rgb(137 220 103);
     width: 100%;
     margin: 10px 0;
     padding: 10px;
@@ -97,5 +97,9 @@ body {
 @media (max-width:599px) {
     .musicListContainer {
         width: 86%;
+    }
+
+    .playBtn{
+        font-size: 26px;
     }
 }
