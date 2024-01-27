@@ -17,15 +17,17 @@ body {
 
 .musicListContainer {
     border-radius: 8px;
-    padding: 10px;
-    background-color: rgb(137, 231, 99);
     width: 40%;
     margin: 50px auto;
     position: relative;
 }
 
 .music {
+    border-radius: 8px;
+    background-color: rgb(137, 231, 99);
     width: 100%;
+    margin: 10px 0;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -81,7 +83,13 @@ body {
     background-color: green;
 }
 
-.controls >.playBtn{
+
+.controlBtn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.playControlBtn, .backControlBtn, .nextControlBtn{
     font-size: 50px;
     color: white;
 }
