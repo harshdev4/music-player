@@ -8,8 +8,6 @@ body {
     position: relative;
     background-color: rgb(15, 15, 15);
     color: white;
-    height: 97vh;
-    min-height: 500px;
 }
 
 .container {
@@ -64,8 +62,8 @@ body {
 .controls{
     width: 25%;
     min-width: 260px;
-    position: absolute;
-    bottom: 10px;
+    position: fixed;
+    bottom: 8px;
     left: 50%;
     transform: translateX(-50%);
 }
