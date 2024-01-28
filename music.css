@@ -5,8 +5,11 @@
 }
 
 body {
+    position: relative;
     background-color: rgb(15, 15, 15);
     color: white;
+    height: 97vh;
+    min-height: 600px;
 }
 
 .container {
@@ -19,12 +22,11 @@ body {
     border-radius: 8px;
     width: 40%;
     margin: 50px auto;
-    position: relative;
 }
 
 .music {
     border-radius: 8px;
-    background-color: rgb(137 220 103);
+    background-color: rgb(137, 231, 99);
     width: 100%;
     margin: 10px 0;
     padding: 10px;
@@ -61,26 +63,31 @@ body {
 
 .controls{
     width: 25%;
-    min-width: 210px;
+    min-width: 260px;
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
+.playedAudio{
+    font-size: 0.8rem;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
 .progressBar{
     width: 100%; 
     margin-bottom: 15px;
-    background-color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.bar{
-    width: 0%;
-    height: 5px;
-    border-radius: 5px;
-    background-color: green;
+#bar{
+    width: 100%;
+    border-radius: 10px;
 }
 
 
@@ -99,7 +106,7 @@ body {
         width: 86%;
     }
 
-    .playBtn{
-        font-size: 26px;
+    .playControlBtn, .backControlBtn, .nextControlBtn{
+        font-size: 40px;
     }
 }
