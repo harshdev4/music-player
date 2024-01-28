@@ -87,7 +87,7 @@ function handlePlay(btn) {
                 let percentage = (audio.currentTime / audio.duration) * 100;
                 bar.value = percentage.toFixed(2);
                 if (bar.value == 100) {
-                    pause(btn);
+                    controlNextBtn.click();
                 }
             }, 1000);
         }
